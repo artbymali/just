@@ -575,6 +575,7 @@ nav ul li a:hover{
     width: 93%;
     margin-left: auto;
     margin-right: auto;
+    
     padding: 30px 0;
     display: flex;
     justify-content: space-between;
@@ -689,7 +690,10 @@ nav ul li a:hover{
 
 .items-compartment{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 300px);
+    row-gap: 20px;
+    ;
+    
 }
 
 .items-box{
@@ -698,8 +702,9 @@ nav ul li a:hover{
 }
 
 .items-box-top img{
-    width: 312px;
+    width: 100%;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 .items-box-bottom{
@@ -749,7 +754,8 @@ nav ul li a:hover{
 }
 
 .items-box-bottom .porduct-button button{
-    display: none;
+    opacity: 0;
+    cursor: none;
     width: 100%;
     border: none;
     background-color: #202020;
@@ -769,7 +775,8 @@ nav ul li a:hover{
 }
 
 .items-box:hover .porduct-button button{
-    display: block;
+    opacity: 1;
+    cursor: pointer;
 }
 
 
@@ -1097,6 +1104,10 @@ nav ul li a:hover{
     .remove{
         display: none;
     }
+    
+        
+        
+    
 
 
 
